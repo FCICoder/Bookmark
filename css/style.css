@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,800;1,200;1,500;1,600;1,800&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,800;1,200;1,500;1,600;1,800&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;1,100&family=Righteous&display=swap');
+
+
+body{
+    background-color:rgb(247, 236, 222);
+
+}
+
+*{
+box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  ::selection{
+    background-color:#fec260 ;
+    color: #3ca55c;
+  }
+
+h1{
+    width: fit-content;
+    font-family: "Pacifico", cursive;
+    font-weight: 500;
+    font-size: 50px;
+    color: RGB(53, 46, 40);
+    position: relative;
+    margin:auto;
+    
+}
+
+h1::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    left: 0;
+    bottom: 10px;
+    background-color: #fec260;
+    transition: height 350ms;
+    z-index: -1;
+}
+
+h1:hover::before{
+    height:57%;
+}
+
+h2{
+    color:rgb(33, 37, 41);
+    font-family:"Righteous",cursive;
+    width: fit-content;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+
+    margin: auto;
+    line-height: 30px;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+        
+}
+
+button{
+    background-color: #d1512d !important ;
+    color: aliceblue !important;
+    border: 0 !important;
+    width:fit-content !important;
+    left: 40%;
+
+}
+
+#btn1{
+    background-color: #8a9e23!important;
+}
+#btn1:hover{
+    background-color: #9faa66 !important;
+    border: 1px solid black !important;
+}
+
+#btn2{
+    background-color: red !important;
+}
+
+#btn2:hover{
+    background-color: rgb(173, 5, 5) !important;
+    border: 1px solid black  !important;
+}
+
+input:focus{
+    box-shadow:  4px 4px rgba(248, 153, 29, 0.264),-4px -4px rgba(248, 153, 29, 0.264) !important;
+    border-color: rgb(248, 153, 29)!important;  
+}
+
+span{
+    background-color: orange;
+}
+
+.content{
+    border: 2px;
+    width: 90%;
+    border-top: 2px black  dotted;
+    border-bottom: 2px black  dotted;
+
+}
+
+
